@@ -5,7 +5,7 @@ import bootstrap from './bootstrap';
 let cwd = process.cwd();
 
 let args = process.argv.slice(2);
-let [port, root] = args;
+let [root, port = 80] = args;
 
 let app = express();
 app.use(bootstrap(resolve(cwd, root)));

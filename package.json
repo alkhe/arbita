@@ -2,10 +2,15 @@
   "name": "arbita",
   "version": "0.0.1",
   "description": "Flexible random redirector for sharing your favorite media.",
-  "main": "index.js",
+  "preferGlobal": true,
+  "main": "lib/cli.js",
+  "bin": {
+    "arbita": "lib/cli.js"
+  },
   "scripts": {
-    "start": "babel-node .",
-    "test": ":"
+    "start": "node lib/cli",
+    "dev": "babel-node ./src/cli",
+    "mk": "gulp"
   },
   "repository": {
     "type": "git",
