@@ -4,6 +4,7 @@
   "description": "Flexible random redirector for sharing your favorite media.",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node .",
     "test": ":"
   },
   "repository": {
