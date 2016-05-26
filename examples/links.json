@@ -1,0 +1,20 @@
+{
+	"links": [
+		"https://my.mixtape.moe/oaeshd.mp3",
+		"https://my.mixtape.moe/pusrqj.mp3",
+		"https://my.mixtape.moe/yheptx.mp3"
+	],
+	"sub": {
+		"street": {
+			"links": [
+				"https://my.mixtape.moe/oaeshd.mp3",
+				"https://my.mixtape.moe/yheptx.mp3"
+			]
+		},
+		"taishi": {
+			"links": [
+				"https://my.mixtape.moe/pusrqj.mp3"
+			]
+		}
+	}
+}
