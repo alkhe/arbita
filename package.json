@@ -1,0 +1,29 @@
+{
+  "name": "arbita",
+  "version": "0.0.1",
+  "description": "Flexible random redirector for sharing your favorite media.",
+  "main": "index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edge/arbita.git"
+  },
+  "keywords": [
+    "redirector",
+    "random",
+    "arbitrary",
+    "express",
+    "media"
+  ],
+  "author": "synchronous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edge/arbita/issues"
+  },
+  "homepage": "https://github.com/edge/arbita#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
