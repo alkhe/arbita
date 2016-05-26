@@ -1,6 +1,6 @@
 {
   "name": "arbita",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Flexible random redirector for sharing your favorite media.",
   "preferGlobal": true,
   "main": "lib/cli.js",
