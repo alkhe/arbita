@@ -14,7 +14,7 @@ const jsonRoute = data => {
 
 	router.get('/', (req, res) => {
 		let link = sample(links);
-		console.log(link);
+		req.redir = link;
 		res.redirect(link);
 	});
 
@@ -37,7 +37,7 @@ export default file => {
 			let router = Router();
 			router.get('/', (req, res) => {
 				let link = sample(links);
-				console.log(link);
+				req.redir = link;
 				res.redirect(link);
 			});
 			return router;
