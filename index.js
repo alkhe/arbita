@@ -1,21 +1,18 @@
 import express from 'express';
-import { readFileSync } from 'fs';
-import { simple } from './reader';
+import { resolve } from 'path';
+import bootstrap from './bootstrap';
+
+let cwd = process.cwd();
+
+let args = process.argv.slice(2);
+let [port, root] = args;
 
 let app = express();
+app.use(bootstrap(resolve(cwd, root)));
 
-let links = simple(readFileSync('links.at', 'utf8'));
-
-let { floor, random } = Math;
-let sample = list => list[floor(random() * list.length)];
-
-app.get('/', (req, res) => {
-	res.redirect(sample(links));
-});
-
-app.listen(80, '::', err => {
+app.listen(port, '::', err => {
 	if (err) {
 		return console.err(err);
 	}
-	console.log('listening on :::80');
+	console.log(`listening on :::${ port }`);
 });
