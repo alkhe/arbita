@@ -13,7 +13,9 @@ const jsonRoute = data => {
 	let { links = fallback, sub = {} } = data;
 
 	router.get('/', (req, res) => {
-		res.redirect(sample(links));
+		let link = sample(links);
+		console.log(link);
+		res.redirect(link);
 	});
 
 	for (let k in sub) {
@@ -33,9 +35,11 @@ export default file => {
 		default: {
 			let links = simple(readFileSync(file, 'utf8')) || fallback;
 			let router = Router();
-			router.get('/', (req, res) =>
-				res.redirect(sample(links))
-			);
+			router.get('/', (req, res) => {
+				let link = sample(links);
+				console.log(link);
+				res.redirect(link);
+			});
 			return router;
 		}
 	}
